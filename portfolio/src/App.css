@@ -1,0 +1,90 @@
+body {
+  background: linear-gradient(to bottom, black, pink, beige);
+  /* background-image: url('./assets/foralwall.jpg'); */ 
+  background-size: 100% 100%;
+  background-repeat:repeat;
+  color: beige;
+  margin: 1;
+  font-family: Arial, sans-serif;
+
+}
+
+
+body::before {
+  content: "✿";
+  position: absolute;
+  top: -100px;
+  left: 82%; 
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  pointer-events: none; 
+  animation: flowers 20s linear infinite; 
+}
+
+
+body::before {
+  content: "✿"; 
+  color: beige; 
+  font-size: 30px; 
+  animation: flowers 20s linear infinite; 
+}
+
+
+@keyframes flowers {
+  to {
+    transform: translateY(100%); 
+  }
+}
+
+.navbar {
+  position: sticky !important; 
+  top: 0; 
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  
+}
+
+.brand-link {
+  color: beige !important;
+  display: flex;
+  align-items: center;
+  @media (max-width: 768px) {
+    font-size: 20px;}
+}
+
+.icon-links {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  @media (max-width: 768px) {
+    margin-right: 10px;
+  }
+}
+
+.icon-link {
+  color: beige;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: white;
+  -webkit-text-stroke: .5px black;
+	-webkit-text-fill-color: white;
+  font-size: 14px;
+  margin: 0 4px; 
+  padding-top: 7px;
+}
+
+.nav-link:hover {
+  color: #e19bb7;
+  cursor: pointer;
+}
